@@ -1,4 +1,4 @@
-/*let mode;
+let mode;
 let color;
 if(mode==="dark")
 {
@@ -10,6 +10,9 @@ if(mode==="light")
 }
 console.log(color);
 
+
+
+
 let age=26;
 if(age>25)
 {
@@ -18,6 +21,10 @@ if(age>25)
 else{
     console.log("you cannot vote");
 }
+
+
+
+
 let a=20;
 if(a%2==0)
 {
@@ -26,6 +33,10 @@ if(a%2==0)
 else{
     console.log("odd number")
 }
+
+
+
+
 let c=50;
 if(c>50)
 {
@@ -34,6 +45,10 @@ if(c>50)
 else{
 console.log("c is less than or equal to 50");
 }
+
+
+
+
 let num=29;
 if(num%2===0)
 {
@@ -42,6 +57,8 @@ if(num%2===0)
 else{
     console.log(num,"is odd");
 }
+
+
 
 let ag=65;
 if(ag>60)
@@ -57,15 +74,22 @@ else{
     console.log("you are senior");
     console.log("you are able to do anything");
 }
+
+
+
 let g=25;
 let result;
 result= a>=18? "adult" : "not adult";
 console.log(result);
 
+
+
 let h=27;
 let s;
 s=h>=25?"adult":"not adult";
 console.log(s);
+
+
 
 let m=prompt("enter a number");
 if(m%3===0)
@@ -76,10 +100,15 @@ else{
     console.log(m,"is NOT divisible by 5");
 }
 
+
+
 alert("rajeev");
+
+
 
 let n=prompt("rajeev singh");
 console.log(n);
+
 
 let t=prompt("enter a number");
 if(t>=80 && t<=100)
