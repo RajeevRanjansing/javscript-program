@@ -101,11 +101,6 @@ else{
 }
 
 
-
-alert("rajeev");
-
-
-
 let n=prompt("rajeev singh");
 console.log(n);
 
@@ -132,3 +127,113 @@ else
     console.log("You are Fail");
 }
 
+
+let i;
+for(i=1;i<=5;i++)
+{
+    console.log("RAJEEV SINGH");
+}
+
+for(i=1;i<=10;i++)
+{
+    console.log("i= ",i);
+}
+
+
+
+let i=1;
+while(i<=10)
+{
+    console.log("Rajeev Singh");
+    i++;
+}
+let i=5;
+do{
+    console.log("Rajeev Singh");
+    i++;
+}
+while(i<=10);
+
+
+let a="RAJEEVSINGH";
+for(let i of a)
+{
+    console.log("i= ",i);
+}
+
+let x="Gautam";
+for(let i of x)
+{
+    console.log("i= ",i);
+}
+
+let q=prompt("enter a number");
+if(q>26)
+{
+    console.log("you can vote");
+}
+else{
+    console.log("you cannot vote");
+}
+
+alert("fill all the details");
+
+let s=prompt("enter a number");
+if(s%2===0)
+{
+    console.log(s,"is even");
+}
+else{
+    console.log(s,"is odd");
+}
+
+let s=prompt("enter your marks");
+if(s>90 && s<100)
+{
+    console.log("10 CGPA");
+}
+else if(s>80 && s<=90)
+{
+    console.log("9 CGPA");
+}
+else if(s>70 && s<=80)
+console.log("8 CGPA");
+else
+console.log(s,"you are fail");
+
+
+
+for(i=1;i<=10;i++)
+{
+    console.log("Rajeev singh");
+}
+
+let s="Rajeev";
+let size=0;
+for(let i of s)
+{
+    console.log("i= ",i);
+    size++;
+}
+console.log("size of string= ",size);
+
+let t="rajeev singh";
+let length=0;
+for(let i of t)
+{
+    console.log("i= ",i);
+length++;
+}
+console.log("length of the string ",length);
+
+
+let student={
+    name:"Rajeev",
+    age:20,
+    cgpa:7.5,
+    ispass:true,
+};
+for(let key in student)
+{
+    console.log("key= ",key,  "value= ",student[key]);
+}
