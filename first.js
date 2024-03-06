@@ -11,8 +11,7 @@ if(mode==="light")
 console.log(color);
 
 
-
-
+//if-else loop
 let age=26;
 if(age>25)
 {
@@ -59,7 +58,7 @@ else{
 }
 
 
-
+//else-if loop
 let ag=65;
 if(ag>60)
 {
@@ -76,7 +75,7 @@ else{
 }
 
 
-
+//Ternery operator
 let g=25;
 let result;
 result= a>=18? "adult" : "not adult";
@@ -147,6 +146,9 @@ while(i<=10)
     console.log("Rajeev Singh");
     i++;
 }
+
+
+//do while loop
 let i=5;
 do{
     console.log("Rajeev Singh");
@@ -154,14 +156,14 @@ do{
 }
 while(i<=10);
 
-
+//for of loop
 let a="RAJEEVSINGH";
 for(let i of a)
 {
     console.log("i= ",i);
 }
 
-let x="Gautam";
+let x="rajeev";
 for(let i of x)
 {
     console.log("i= ",i);
@@ -237,3 +239,99 @@ for(let key in student)
 {
     console.log("key= ",key,  "value= ",student[key]);
 }
+
+
+let gamenum=10;
+
+let usernum=prompt("Guess the number");
+{
+    console.log(usernum);
+}
+if(gamenum==usernum)
+{
+    console.log("correct");
+}
+else{
+    console.log("SORRY!Try next time");
+}
+
+let gamenum=14;
+let usernum=prompt("Guess the number");
+while(usernum !=gamenum)
+{
+    usernum=prompt("you entered wrong number, Try again");
+}
+console.log("congratulation! you entered the right number");
+
+let gamenum=25;
+let usernum=prompt("Guess the number");
+while(usernum != gamenum)
+{
+    usernum=prompt("wrong choice! Try again");
+}
+console.log("congratulation");
+
+let a="Rajeev singh";
+{
+console.log(a.length);
+}
+
+let b="rishuraj";
+{
+    console.log(b[5]);
+}
+
+let c=`my name is rajeev singh`;
+{
+    console.log(c);
+    console.log(typeof c);
+}
+
+
+let object={
+        item:"pen",
+        price:10,
+};
+console.log("item is ",object);
+a="Rajeevkumarsingh";
+{
+    console.log(a.length);
+}
+
+let stude={
+    name:"rajeev",
+    age:15,
+    cgpa:8,
+};
+for(let key in stude)
+{
+console.log("key= ",key,  "value= ",stude[key]);
+}
+
+let family={
+    name:"vinaykumarsingh",
+    age:52,
+    profession:"Businessman",
+    idea:"mastermind",
+};
+for(let i in family)
+{
+    console.log("i=",i,       "value=",family[i]);
+    console.log(typeof family);
+    console.log(typeof name);
+    
+}
+
+console.log("Rajeev\n\nSingh");
+let b="Rajeev\n\nSingh";
+console.log(b.length);
+console.log("Rajeev\tSingh");
+let a="Rajeev\tSingh";
+console.log(a.length);
+
+
+let c="rajeevsingh";
+console.log(c.length);
+console.log(c.toUpperCase());
+console.log(c.toLowerCase());
+
