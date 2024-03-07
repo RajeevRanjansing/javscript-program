@@ -335,3 +335,107 @@ console.log(c.length);
 console.log(c.toUpperCase());
 console.log(c.toLowerCase());
 
+
+let g="      Rajeev   singh        ";
+console.log(g.trim());
+console.log(g.toUpperCase());
+console.log(g.toLowerCase());
+
+
+let i="rajeevsingh";
+console.log(i.slice(0,3));
+
+let j="Rahulsingh";
+console.log(j.slice(0,5));
+
+let k="BabuRao";
+console.log(k.slice(0,6));
+
+ a="rajeev";
+ b="singh";
+ s=a.concat(b);
+console.log(s);
+
+let c="Aman";
+let d="singh";
+console.log(c.concat(d));
+
+console.log(d.concat(c));
+
+let e="koi";
+let f="Dukan";
+console.log(e+f);
+console.log(f+e);
+
+console.log("I am buying from" + e + f);
+
+let e="Hello";
+let s=e.replace("H","y");
+console.log(s);
+
+let t=e.replace("lo","p");
+console.log(t);
+
+let u="Hellololo";
+let m=u.replaceAll("lo","p");
+console.log(m);
+
+let n="rajeev";
+console.log(n.replace("r","s"));
+console.log(n.replaceAll("e","i"));
+
+let m="rajeev";
+console.log(m.charAt(2));
+console.log(m.charAt(5));
+
+let y="rajeev";
+console.log(y.toUpperCase());
+console.log(y.replace("v","s"));
+console.log(y.charAt(5));
+console.log(y.trim());
+
+let username=prompt("Enter your full name");
+let s="@"+ username + username.length;
+console.log(s);
+
+
+let username="rajeevkumar";
+let s=prompt("Guess the name");
+while(s != username)
+{
+    s=prompt("wrong choice! Try again")
+}
+console.log("congratulation");
+
+
+let marks=[20,23,25,28,29];
+console.log(marks);
+
+
+let name=["rajeev","sanjeev","shashi","shubham"];
+console.log(name);
+console.log(name.length);
+
+let student=[12,15,18,20,25];
+console.log(student);
+
+
+let name=["rajeev", "shashi" ,"tunu","munnu"];
+for(let i=0;i< name.length;i++)
+{
+    console.log(name[i]);
+}
+
+let  cities=["pune","mumbai","up","mp"];
+for(let city of cities)
+{
+    console.log(city);
+}
+
+let  cities=["pune","mumbai","up","mp"];
+for(let city of cities)
+{
+    console.log(city.toUpperCase());
+}
+
+
