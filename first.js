@@ -438,4 +438,82 @@ for(let city of cities)
     console.log(city.toUpperCase());
 }
 
+let marks = [85,97,44,37,76,60];
+let sum=0;
+for(i of marks)
+{
+sum=sum+i;
+}
+let avg=sum/marks.length;
+console.log(`Average marks = ${avg}`);
+
+let marks=[10,15,20,25,30];
+let sum=0;
+for(i of marks)
+{
+   sum=sum+i;
+}
+let avg=sum/marks.length;
+console.log(avg);
+
+
+let price=[250,645,300,900,50];
+for(i=0;i<5;i++)
+{
+    
+    offer=price[i]/10;
+    newprice=price[i]-offer;
+    console.log(newprice);
+}
+
+
+let item=[250,645,300,900,50];
+for(i=0;i<5;i++)
+{
+    //console.log(item[i]);
+    offer=item[i]/10;
+    newprice=item[i]-offer;
+    console.log(newprice);
+}
+
+let item=["tomato","potato","onion","cabbage"];
+item.push("cauliflower","paneer","butter");
+console.log(item);
+
+
+let item=["tomato","potato","onion","cabbage","paneer","butter"];
+item.pop();
+console.log(item);
+console.log(item.toString());
+
+
+let marks=[10,20,30,40,50];
+s=console.log(marks.pop());
+console.log(marks);
+
+
+let marks=[10,20,30,40,50];
+console.log(marks.push(60));
+console.log(marks);
+
+let s1="rajeev";
+let s2="singh";
+console.log(s1.concat(s2));
+
+
+let s1=["rajeev","shashi","rishu"];
+let s2=["rakshit","rahul","sahil"];
+console.log(s1.concat(s2));
+
+
+let s1=["rajeev","shashi","rishu"];
+let s2=["rakshit","rahul","sahil"];
+let s3=["Aaryan","Aarav","Ayush"];
+console.log(s1.concat(s2,s3));
+
+
+let s1=["rajeev","shashi","rishu"];
+let r=(s1.unshift("singh"));
+console.log(s1);
+
 
