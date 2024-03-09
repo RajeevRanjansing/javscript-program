@@ -516,4 +516,107 @@ let s1=["rajeev","shashi","rishu"];
 let r=(s1.unshift("singh"));
 console.log(s1);
 
+let s=["Aman","shradha","dhattarwal"];
+let r=console.log(s.unshift("khapra"));
+console.log(s);
+
+
+let s=["Aman","shradha","dhattarwal"];
+let r=console.log(s.shift());
+console.log(s);
+
+
+let s1=["Aman","shradha","dhattarwal","khapra","rajnish","rakshit"];
+console.log(s1.slice(1,3));
+
+
+let num=[1,2,3,4,5,6,7,8,9];
+let r=num.splice(2,3,103,104,105);
+console.log(num);
+
+let n=[10,20,30,40,50,60,70,80,90];
+let r=n.splice(2,2,300,400);
+console.log(n);
+
+
+let n=[10,20,30,40,50,60,70,80,90];
+let r=n.splice(2,0,102);
+console.log(n);
+
+
+let n=[10,20,30,40,50,60,70,80,90];
+let r=n.splice(2,1);
+console.log(n);
+
+
+let n=[10,20,30,40,50,60,70,80,90];
+let r=n.splice(2,1,300);
+console.log(n);
+
+
+let n=[10,20,30,40,50,60,70,80,90];
+let r=n.splice(5);
+console.log(n);
+
+
+let company=["bloomberg","uber","google","microsoft","ibm","netflix"];
+//let r=company.shift();
+//console.log(company);
+//company.splice(1,1,"ola");
+//console.log(company);
+let r=company.push("amazon");
+console.log(company);
+
+
+
+function a()
+{
+    console.log("rajeev");
+    console.log("singh");
+}
+a();
+a();
+
+function a(x,y)
+{
+   
+    console.log(x+y);
+}
+
+function sum(x, y, z)
+{
+    console.log(x-y-z);
+}
+
+function a(x,y)
+{
+    s=x+y;
+    return s;
+}
+let m=a(4,9);
+console.log(m);
+
+
+const arrowsum=(a,b)=>{
+    console.log(a+b);
+}
+
+const printhello = ()=>
+{
+    console.log("Hello");
+};
+
+function countvowel(str){
+ let c=0;
+for(const char of str)
+{
+    if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u"){
+        c++;
+    }
+}
+console.log(c);
+}
+
+
+
 
