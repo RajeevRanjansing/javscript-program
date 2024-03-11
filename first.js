@@ -617,6 +617,110 @@ for(const char of str)
 console.log(c);
 }
 
+//count vowel in word
+
+function countvowel(str)
+{
+    let count=0;
+        for(let char of str)
+        {
+            if(char==="a"|| char==="e" || char==="i"|| char==="o"|| char==="u")
+            {
+                count++;
+        }
+    }
+    console.log(count);
+}
+
+//convert string to uppercase
+
+let s="rajeev";
+console.log(s.toUpperCase());
+
+
+let a=["delhi","pune","mumbai","bihar","mp"];
+a.forEach((val)=>{
+    console.log(val.toUpperCase());
+});
+
+let b=["DELHI","PUNE","MUMBAI","BIHAR","MP"];
+b.forEach((val)=>{
+
+    console.log(val.toLowerCase());
+});
+
+let c=["DELHI","PUNE","MUMBAI","BIHAR","MP"];
+c.forEach((val,idx)=>{
+
+    console.log(val.toLowerCase(),idx);
+});
+
+
+let a=[1,2,3,4,5,6,7,8,9];
+a.forEach((num)=>{
+    console.log(num*num);
+});
+
+//square of number
+
+let a=[1,2,3,4,5];
+a.forEach((a)=>{
+    console.log(a**2);
+});
+
+
+let num=[2,3,4,5];
+num.map((val)=>{
+    console.log(val);
+});
+
+let num=[2,3,4,5];
+let s=num.map((val)=>{
+    return val*2;
+});
+console.log(s);
+
+
+let num=[1,2,3,4,5,6,7,8,9,10];
+let odd=num.filter((val)=>{
+    return val%2 !== 0;
+});
+console.log(odd);
+
+
+let num=[1,2,3,4,5,6,7,8,9,10];
+let n=num.filter((val)=>{
+    return val > 4;
+});
+
+console.log(n);
+
+let m=[1,2,3,4,5,6,7,8,9];
+const output=m.reduce((result,currentvalue)=>{
+    return result + currentvalue;
+});
+console.log(output);
+
+
+let m=[1,2,3,4,5];
+const output=m.reduce((result,current) =>   {
+    return result*current;
+});
+console.log(output);
+
+
+let m=[1,2,3,4,5,6,7,8,9];
+let output=m.reduce((result,current)=>{
+    return result>current ? result:current;
+});
+console.log(output);
+
+
+let m=[1,2,3,4,5,6,7,8,9];
+let output=m.reduce((result,current)=>{
+    return result<current ? result:current;
+});
+console.log(output);
 
 
 
