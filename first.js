@@ -723,4 +723,109 @@ let output=m.reduce((result,current)=>{
 console.log(output);
 
 
+let n=[10,20,30,40,50,60,70,80,90,92,54,95,99,100];
+let s=n.filter((val)=>{
+    return val>90;
+});
+console.log(s);
+
+//javascript program to find sum
+let s=[1,2,3,4,5];
+let sum=s.reduce((result,current)=>{
+return result+current;
+});
+console.log(sum);
+
+
+let student={
+    name:"Rajeev Singh",
+    cgpa:9,
+    father:"Vinay kumar singh",
+    house:"Bihar",
+    marks:90,
+};
+
+
+class parent{
+    hello(){
+        console.log("Hello");
+    }
+}
+class child extends parent{}
+let obj=new child();
+
+
+
+class person{
+    eat(){
+        console.log("eat");
+    }
+    sleep(){
+        console.log("Sleep");
+    }
+}
+
+class Engineer extends person{
+    work(){
+        console.log("solve problem,build something");
+    }
+}
+
+let rajeev=new Engineer();
+
+
+let a1=[1,2,3];
+let a2=[1,2,3];
+if(a1==a2)
+{
+    console.log("same");
+}
+else{
+    console.log("Not Same");
+}
+
+let a=10;
+let b=20;
+if(a===b)
+{
+    console.log("same");
+}
+else{
+    console.log("Both are not same");
+}
+
+function hello(){
+    console.log("Hello");
+}
+setTimeout(hello,5000);
+
+
+function sum(a,b,c){
+    console.log(a+b+c);
+}
+
+function calculator(a,b,c,sumcallback){
+    sumcallback(a,b,c);
+}
+calculator(1,2,3,sum); 
+
+
+const hello=()=>{
+    console.log("Hello");
+};
+setTimeout(hello,4000);
+
+
+function getData(dataId){
+    console.log("data",dataId);
+}
+
+
+let promise = new promise((resolve, reject) => {
+    console.log("I am a promise");
+    resolve("Success");
+})
+
+
+
 
