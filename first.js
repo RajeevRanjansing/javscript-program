@@ -827,5 +827,90 @@ let promise = new promise((resolve, reject) => {
 })
 
 
+function getData(dataId,getnextData){
+    return new promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data",dataId);
+            resolve("success");
+            if(getNextData){
+                getNextData();
+            }
+           },5000);
+    });
+}
+
+
+const getPromise1=()=>{
+    return new promise((resolve, reject)=>{
+        console.log("I am a promise");
+    });
+}
+
+function asyncFunc1(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data1");
+            resolve("success");
+        },4000);
+    });
+}
+
+function asyncFunc2(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data2");
+            resolve("success");
+        },4000);
+    });
+}
+
+console.log("fetching data1...");
+let p1=asyncFunc1();
+p1.then((res)=>{
+    console.log("fetching data2...");
+    let p2=asyncFunc2();
+    p2.then((res)={});
+})
+
+
+function hello(){
+    console.log("This is your last second javascript program");
+}
+
+function sub(a,b){
+    sub=a-b;
+    console.log(sub);
+}
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+const getFacts = async () =>{
+    console.log("getting data...");
+    let response = await fetch(URL);
+    console.log(response);
+};
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+const getFacts = async () =>{
+    console.log("getting data...");
+    let response = await fetch(URL);
+    console.log(response);
+    let data=await response.json();
+    console.log(data[0]);
+};
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+const factpara=document.querySelector("#fact");
+const btn=document.querySelector("#btn");
+
+function getFacts(){
+    fetch(URL).then((response)=>{
+       return response.json();
+    })
+    .then((data)=>{
+        console.log(data);
+    });
+}
+
+btn.addEventListener("click",getFacts);
 
 
